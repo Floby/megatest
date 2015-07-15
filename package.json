@@ -1,5 +1,5 @@
 {
-  "name": "supertest",
+  "name": "megatest",
   "version": "1.0.2",
   "description": "Super-agent driven library for testing HTTP servers",
   "main": "index.js",
