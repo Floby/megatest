@@ -1,4 +1,4 @@
-# SuperTest [![Build Status](https://travis-ci.org/visionmedia/supertest.svg?branch=master)](https://travis-ci.org/visionmedia/supertest)
+# MegaTest [![Build Status](https://travis-ci.org/floby/megatest.svg?branch=master)](https://travis-ci.org/floby/megatest)
 
   HTTP assertions made easy via [super-agent](http://github.com/visionmedia/superagent).
 
@@ -9,12 +9,12 @@
 
 ## Getting Started
 
-  Install SuperTest as an npm module and save it to your package.json file as a development dependency:
+  Install Megatest as an npm module and save it to your package.json file as a development dependency:
   ```
-npm install supertest --save-dev
+npm install megatest --save-dev
   ```
 
-  Once installed it can now be referenced by simply calling ```require("supertest");```
+  Once installed it can now be referenced by simply calling ```require("megatest");```
 
 ## Example
 
@@ -22,11 +22,11 @@ npm install supertest --save-dev
   already listening for connections then it is bound to an ephemeral port for you so
   there is no need to keep track of ports.
 
-  SuperTest works with any test framework, here is an example without using any
+  MegaTest works with any test framework, here is an example without using any
   test framework at all:
 
 ```js
-var request = require('supertest')
+var request = require('megatest')
   , express = require('express');
 
 var app = express();
@@ -82,7 +82,7 @@ describe('GET /users', function(){
 })
 ```
 
-  Anything you can do with superagent, you can do with supertest - for example multipart file uploads!
+  Anything you can do with superagent, you can do with megatest - for example multipart file uploads!
 
 ```js
 request(app)
@@ -110,7 +110,7 @@ request.get('/').expect('heya', function(err){
   Here's an example with mocha that shows how to persist a request and its cookies:
 
 ```js
-var request = require('supertest')
+var request = require('megatest')
    , should = require('should')
    , express = require('express');
 
