@@ -27,12 +27,13 @@
     "bdd",
     "http",
     "test",
-    "testing"
+    "testing",
+    "supertest"
   ],
   "author": "TJ Holowaychuk",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/visionmedia/supertest.git"
+    "url": "https://github.com/floby/megatest.git"
   }
 }
